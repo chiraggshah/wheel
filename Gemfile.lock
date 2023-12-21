@@ -11,13 +11,6 @@ GIT
       rubocop
       smart_properties
 
-GIT
-  remote: https://github.com/ffi/ffi.git
-  revision: 73c36d77d76ef681cade4c4024abfe73af8a38b6
-  submodules: true
-  specs:
-    ffi (1.15.5)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -107,6 +100,7 @@ GEM
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
+    base64 (0.2.0)
     bcrypt (3.1.18)
     better_html (2.0.1)
       actionview (>= 6.0)
@@ -151,6 +145,7 @@ GEM
       railties (>= 5.0.0)
     faker (2.23.0)
       i18n (>= 1.8.11, < 2)
+    ffi (1.15.5)
     formtastic (4.0.0)
       actionpack (>= 5.2.0)
     formtastic_i18n (0.7.0)
@@ -217,6 +212,8 @@ GEM
       timeout
     net-smtp (0.3.3)
       net-protocol
+    newrelic_rpm (9.6.0)
+      base64
     nio4r (2.5.9)
     nokogiri (1.15.2-x86_64-darwin)
       racc (~> 1.4)
@@ -381,13 +378,13 @@ DEPENDENCIES
   erb_lint!
   factory_bot_rails
   faker (~> 2.19)
-  ffi!
   honeybadger
   jbuilder (>= 2.7)
   letter_opener
   mail_interceptor
   minitest
   minitest-ci
+  newrelic_rpm
   pg
   pry-byebug
   puma
